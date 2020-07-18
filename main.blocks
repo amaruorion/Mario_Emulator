@@ -1,4 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="2dn)IZegjBq~R,uZa$=)">Player</variable><variable type="KIND_SpriteKind" id="j:qcXz#,23aCImFYdi|/">Projectile</variable><variable type="KIND_SpriteKind" id="`R.]/[#JaWI6)_7R2%!b">Food</variable><variable type="KIND_SpriteKind" id="kZ{[8Mxkm+j?t5fp@-QM">Enemy</variable><variable type="BLOCKLY_TILESET_TYPE" id="N@h$Zb0~~-$D@5P|1(%{">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable id="9}Q:Z*VJztN4mBZoDgc!">mySprite</variable><variable id="X2[xd$H^3!VL,#Ylr,5+">Mario</variable><variable id="XDDZa[+bp(PEJZOuRuhq">Goomba</variable><variable id="Z1O7DOf_rUmUHl`p]s;T">projectile</variable><variable id="9IlodB)qoJ+WNX|He:_=">marioProjectileVelocity</variable><variable id="3]B:cL-AY`1(7ljt8F`7">mario jump count</variable><variable id="B`XHQR4?6#iFZoE#U]I=">marioJumpLeftImage</variable><variable id="-_JDArHWzZGXKdS=;sI8">picture</variable><variable id="lWECY0U:EX,F-Nga;2|h">marioIsFacingRightImage</variable></variables><block type="pxt-on-start" id="*B}-Bt{F%w~,.?@{rfTr" x="20" y="20"><statement name="HANDLER"><block type="tilemap_editor" id="RAH*_oZA_3,sR^fzQlMs"><field name="tilemap">tiles.createTilemap(
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="BLOCKLY_TILESET_TYPE" id="Dxomx(y-i8OzpZ;+Otv!">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable><variable id="}L#,990ey.^YTQU8vhfM">Mario</variable><variable id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</variable><variable id="~N3N33m3UWImMiYR1H}L">mario_jump_count</variable><variable id="C=@MG4j?`{X]=Q+{*+!F">marioJumpLeftImage</variable><variable id=".b+oH$t?LNMj4F4iP!b,">Goomba</variable><variable id="-5JkM.(.K2_A)YlDh|:P">marioProjectileVelocity</variable><variable type="KIND_SpriteKind" id="m8xEjSJ`KV/1}HupFNs.">Player</variable><variable type="KIND_SpriteKind" id="4VxYE#W1LrZA~;Dd9+;V">Projectile</variable><variable type="KIND_SpriteKind" id="T{[RorFk8%A`WL|uxZu}">Food</variable><variable type="KIND_SpriteKind" id="~c4bmQ0hbCw$y=+yVjHc">Enemy</variable><variable type="KIND_SpriteKind" id="X{ewC1tMCqxo(vlDHmX=">Goomba</variable><variable type="KIND_SpriteKind" id="N)kBNVjCJ4~qx,K)%H-f">Mario</variable></variables><block type="pxt-on-start" id="pv,]G#Yr?Iml9RLJmxXR" x="20" y="20"><statement name="HANDLER"><block type="function_call" id="r3/vPmyZiKY9?9`XVM.~"><mutation name="startGame" functionid="IaOYc6X(9Ib8*QRg%!-5"/></block></statement></block><block type="function_definition" id="T,CpR~F.wAYCC0=#v}!b" x="225" y="36"><mutation name="startGame" functionid="IaOYc6X(9Ib8*QRg%!-5"/><field name="function_name"/><statement name="STACK"><block type="tilemap_editor" id="F{qc5mhXcz)AwbkuBpC{"><field name="tilemap">tiles.createTilemap(
             hex`0a0008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`,
             img`
 2 2 2 2 2 2 2 2 2 2 
@@ -12,7 +12,7 @@
 `,
             [myTiles.tile0,sprites.builtin.forestTiles0],
             TileScale.Sixteen
-        )</field><next><block type="gamesetbackgroundimage" id="XY]R:N_i}fUy.mQbmp{s"><value name="img"><shadow type="background_image_picker" id="j#oI%UoSl%DT$O_ckci:"><field name="img">img`
+        )</field><next><block type="gamesetbackgroundimage" id="C]WI#8;D]Fh8~*C,;=y!"><value name="img"><shadow type="background_image_picker" id="X`b@4drv@qVFZ[UitKSy"><field name="img">img`
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
@@ -133,7 +133,7 @@
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 
-`</field></shadow></value><next><block type="variables_set" id="h4/7;qVeHeB!O{jEUB)]"><field name="VAR" id="3]B:cL-AY`1(7ljt8F`7">mario jump count</field><value name="VALUE"><shadow type="math_number" id="JDIc#jtb+n~!8++@bwX]"><field name="NUM">2</field></shadow></value><next><block type="variables_set" id="@K(oPU|EfgQHeQDUOWl*"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="HFvXi!Ve5G|sj[R=$$!b"><value name="img"><shadow type="screen_image_picker" id="h6Ga}@Pdg`^H9gX,|Jz^"><field name="img">img`
+`</field></shadow></value><next><block type="variables_set" id="d~s0iMAEi2_f/)z4u$iS"><field name="VAR" id="~N3N33m3UWImMiYR1H}L">mario_jump_count</field><value name="VALUE"><shadow type="math_number" id="V4rBhOZl`P8#euo/z7j|"><field name="NUM">2</field></shadow></value><next><block type="variables_set" id="~YD5Mk)G~^+Wnu3NT{qJ"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="TVYZ}Cb[Kb(E^IbCIb)Y"><value name="img"><shadow type="screen_image_picker" id="B%nA4JmH2p])*Clz-I_{"><field name="img">img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
 . . e e e d d f d . . . 
@@ -150,7 +150,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="iZ/bSv4xKbvk(.kW11~)"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="variables_set" id="t6P3P4JjII/56|no=A/b"><field name="VAR" id="XDDZa[+bp(PEJZOuRuhq">Goomba</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="}^M!#zQ0#@mtCCPoUi|M"><value name="img"><shadow type="screen_image_picker" id="JBResn.3e108fETQ18^X"><field name="img">img`
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="w31:_[nbw%G1#p:%oe3}"><field name="MEMBER">Mario</field></shadow></value></block></value><next><block type="variables_set" id="!kBl~(Bef[bd,{p2?%4/"><field name="VAR" id=".b+oH$t?LNMj4F4iP!b,">Goomba</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="M=5ItYqO%uy2j|+wQaMP"><value name="img"><shadow type="screen_image_picker" id="A.El9!XEQK_C_3ook$Ue"><field name="img">img`
 . . . . . . e e e e . . . . . . 
 . . . . . e e e e e e . . . . . 
 . . . . e e e e e e e e . . . . 
@@ -167,7 +167,7 @@ e e e e e e e e e e e e e e e e
 . . . f f d d d d d f f f f f . 
 . . . f f f d d d f f f f f f . 
 . . . . f f f d . f f f f f . . 
-`</field></shadow></value><value name="kind"><shadow type="spritekind" id="rf}rZqo~uZmN@uA%ebs("><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="variables_set" id="OUvT.Y0sCy%HX;q7)`,j"><field name="VAR" id="9IlodB)qoJ+WNX|He:_=">marioProjectileVelocity</field><value name="VALUE"><shadow type="math_number" id="?U1.p`}#@SI(%*AFqp8G"><field name="NUM">150</field></shadow></value><next><block type="variables_set" id="~yv_Jw?P99s#x}s:C-X9"><field name="VAR" id="B`XHQR4?6#iFZoE#U]I=">marioJumpLeftImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="SvIr57X/AhU~7q$#PykS"><field name="img">img`
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="`i=nCg{[,oOWBZwg%6nC"><field name="MEMBER">Goomba</field></shadow></value></block></value><next><block type="variables_set" id="H{hASal?Vlv,8{l.Xit:"><field name="VAR" id="-5JkM.(.K2_A)YlDh|:P">marioProjectileVelocity</field><value name="VALUE"><shadow type="math_number" id="KZg{Y5N!C}Z--Rcm[9LB"><field name="NUM">150</field></shadow></value><next><block type="variables_set" id="*Yt;IdrwCXt7y!a)N.j#"><field name="VAR" id="C=@MG4j?`{X]=Q+{*+!F">marioJumpLeftImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="8BDpQJ[o[?Coclzx(,oN"><field name="img">img`
 . . . . 2 2 2 2 2 . . d d d . . 
 . . . 2 2 2 2 2 2 2 2 2 d d . . 
 . . . e e e d d f d . 2 2 2 . . 
@@ -182,41 +182,7 @@ d d 2 2 2 2 2 8 2 2 2 8 . . e e
 . . e e 8 8 8 8 8 8 8 8 8 8 e e 
 . e e e 8 8 8 8 8 8 . . . . . . 
 . e e . . . . . . . . . . . . . 
-`</field></block></value><next><block type="game_control_sprite" id="q*{3VR{8T[]zB+^Ig#vO"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="Kv3R^NieY/pXA12K#F#`"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="vx"><shadow type="math_number" id="6Zi}2HE1Q/{/?VAT_epK"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="EZ~]xaC%bY/0Ieg8F0cf"><field name="NUM">0</field></shadow></value><next><block type="Image_flipX" id="]^?6oukVkJ2b8RTBehoW"><value name="picture"><block type="variables_get" id="#~+u`_A(4VPLkc3s0UsK"><field name="VAR" id="B`XHQR4?6#iFZoE#U]I=">marioJumpLeftImage</field></block></value><next><block type="Sprite_blockCombine_set" id=":Y5dv%k*09,#~s$8$GRS"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="n|%r(rb6[{BArc8l[@6Q"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="value"><shadow type="math_number" id="+rNVLY?]cRri=|wWu_5="><field name="NUM">350</field></shadow></value><next><block type="Sprite_blockCombine_set" id="-{29_:t4DwmNdcy.6-vd"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="2SR,a]b$WLc.N6`+K4tm"><field name="VAR" id="XDDZa[+bp(PEJZOuRuhq">Goomba</field></block></value><value name="value"><shadow type="math_number" id="08!MHn5w;iqA;))N/kc-"><field name="NUM">350</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="gameupdate" id="D{4?EH5wTB*%B=5!3DXd" x="568" y="20"><statement name="HANDLER"><block type="controls_if" id="La%wB5Y8.X,[{..[a]Lc"><mutation elseif="4"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="*KJjx?,_-Bm#~UG5l@2O"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="A!XkV-C^vP@?IB/)vB:3"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="^j6Hq|-5?L!s3)ZVtiNT"><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="x=0:X%#FW+[R63/:e7#y"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="9V(/RNN%QuE9t:W=[j8I"><field name="NUM">0</field></shadow></value></block></value><value name="B"><block type="keyispressed" id="#.6i9Vt^aYP,I+KK1dh?"><field name="button">controller.left</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="#TpQiR[/U7X.?U~7u.hB"><value name="sprite"><block type="variables_get" id="]nL60/??F]o!C=A`Fq6Z"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="variables_get" id="V#-nAC`4bg2xRH)g$V5W"><field name="VAR" id="B`XHQR4?6#iFZoE#U]I=">marioJumpLeftImage</field></block></value></block></statement><value name="IF1"><block type="logic_operation" id="t9a`o!6::88Y][0?vU4n"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="@C}Qi+$h+zB(z!?:jRR~"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="}$Y2G/IVc)/Sm+x~bb=["><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="V+XOcj;xwYa;I3NYYOko"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="=)C,W{^CjFiaB0Eo+-uo"><field name="NUM">0</field></shadow></value></block></value><value name="B"><block type="keyispressed" id="uoBj[HSgl3el2yo4!9_."><field name="button">controller.right</field></block></value></block></value><statement name="DO1"><block type="spritesetimage" id="hZz3s^IK`6EX+7i`eOd;"><value name="sprite"><block type="variables_get" id="0Xg(a%fM0][[c0YQ+%t;"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="screen_image_picker" id="`4J|6p.7t%pgZA{j?cTv"><field name="img">img`
+`</field></block></value><next><block type="game_control_sprite" id="W,^0|wo4_q0imU|Wi+hn"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><shadow type="variables_get" id=".an+oh`XTp8*b6N9Fl|8"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></shadow></value><value name="vx"><shadow type="math_number" id="ttQk~CV=5I{q.?-5|L%_"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="mk3r[r=*e]aEI[H9VFgY"><field name="NUM">0</field></shadow></value><next><block type="Image_flipX" id="=oMEVdP4?-N-Y%,7PP.M"><value name="picture"><shadow type="variables_get" id="L(*}L_:c{B;1a:./jptV"><field name="VAR" id="C=@MG4j?`{X]=Q+{*+!F">marioJumpLeftImage</field></shadow></value><next><block type="Sprite_blockCombine_set" id="aCob2@g=6uG0NcX+4HI,"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="i3_y9MMu_B!er02|iRv^"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="value"><shadow type="math_number" id="dZAy]lcoBT4lR/gRem,I"><field name="NUM">350</field></shadow></value><next><block type="Sprite_blockCombine_set" id="rF)Pd9(HMjRXS/Fne$gF"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="TIv(bUYS;hwWin8FlHWL"><field name="VAR" id=".b+oH$t?LNMj4F4iP!b,">Goomba</field></block></value><value name="value"><shadow type="math_number" id="}IR,T;:8kf19]bb9.B;-"><field name="NUM">350</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="forever" id="Sokd+H$x#YzKilBBBo!2" x="782" y="20"><statement name="HANDLER"><block type="playMelody" id="7!/-?ZMPTLL#C@t)MF3u"><value name="melody"><shadow type="melody_editor" id="loX_ZZ0NOBYQ-VYC)Tip"><field name="melody">"G F E F G F E F "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="H,`$QHU!sNs188iBM6,s"><mutation min="40" max="500" label="Number" precision="0"/><field name="SLIDER">300</field></shadow></value></block></statement></block><block type="gameupdate" id="AsF(0*IW_6j3S+(iv[bB" x="1290" y="20"><statement name="HANDLER"><block type="controls_if" id="B9#M+c2~9K24+nlJ%8m_"><mutation elseif="4"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="iIA^ga*Ki4})60#]8O|@"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="3%qDH.*3p7O7eT7}{|Ra"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="v_qJzz_^?ru#?z4d2hYW"><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="T|5lQN=+!x%y-MyvV7KE"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="gq|4lk)b/DPIOZ%*lW_R"><field name="NUM">0</field></shadow></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="aoFpe8V-vKm]{Q3)r.:A"><field name="button">controller.left</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="q9Lh6||#A.xK!plN}*r$"><value name="sprite"><block type="variables_get" id="Zo@2kyI)gv@.o*_?)7P2"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"/><block type="variables_get" id=";PiPRa~@Sqs/xLysM-_S"><field name="VAR" id="C=@MG4j?`{X]=Q+{*+!F">marioJumpLeftImage</field></block></value></block></statement><value name="IF1"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="}2h-KHLoIycs`?yHn,:Q"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="I:sdWQ*Jm:`)Lox6yOOq"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id=")B=roVs-A6.bHZW^^L#%"><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="cfPsdCfUn/(x{v0%2EK+"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="z)b?-z*Sm?y%A.(^?uo3"><field name="NUM">0</field></shadow></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="H]m7]VAw#%yB,%oaE3jE"><field name="button">controller.right</field></block></value></block></value><statement name="DO1"><block type="spritesetimage" id="040S~#+ze[=+_g]V8q]d"><value name="sprite"><block type="variables_get" id="fwBUmkpgZge6h0iJ/zp+"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="gP?9v30#05rN!6HxCsXy"><field name="img">img`
 . . . . 2 2 2 2 2 . . d d d . . 
 . . . 2 2 2 2 2 2 2 2 2 d d . . 
 . . . e e e d d f d . 2 2 2 . . 
@@ -231,24 +197,7 @@ d d 2 2 2 2 2 8 2 2 2 8 . . e e
 . . e e 8 8 8 8 8 8 8 8 8 8 e e 
 . e e e 8 8 8 8 8 8 . . . . . . 
 . e e . . . . . . . . . . . . . 
-`</field></block></value></block></statement><value name="IF2"><block type="logic_operation" id="5I~bS`4:.9i4HW60y*6E"><field name="OP">AND</field><value name="A"><block type="spritehasobstacle" id="%$?7!MrI27#_g~brJJXx"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="X`Yw1x6T2vY[pBA{k2.O"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><block type="logic_compare" id="v6OVok9;S@B)8,Zg9]A4"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id=")o._=bbGAx8,a,%]--kX"><field name="property">Sprite.vx</field><value name="mySprite"><block type="variables_get" id="B-#?{Dg*p?[~gS1ddCcR"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="r#_%)@.I*BQoQ|b.0m@o"><field name="NUM">0</field></shadow></value></block></value></block></value><statement name="DO2"><block type="spritesetimage" id="Uu.Ax2bi4BufJ^YD]U/u"><value name="sprite"><block type="variables_get" id="$NsySxJFlhpHhArPTuj!"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="screen_image_picker" id="o6};9+))M=2Vu2e;D]d7"><field name="img">img`
+`</field></shadow></value></block></statement><value name="IF2"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="M+]bhiJCg4:wrPi5);K}"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="?FWIE#{+^po%C57b~[?D"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="#VR@U@[9oo%7Al,I_XFe"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=")cXAfS-fAym[6R!1~}o,"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="C.TZoWG5Ch6?V^te]:CY"><field name="property">Sprite.vx</field><value name="mySprite"><block type="variables_get" id="Z3xmK~Vd_(z9:Q?9CF^+"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="81$LUs9(9EOi=F4/H-!~"><field name="NUM">0</field></shadow></value></block></value></block></value><statement name="DO2"><block type="spritesetimage" id="?NjH3(bVgWyy4iE+;saa"><value name="sprite"><block type="variables_get" id="=8vf2S6wa0*9.:zN7hc?"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="o,^j(N?gmqYDSq}*[I|~"><field name="img">img`
 . . . . 2 2 2 2 2 . . . 
 . 2 2 2 2 2 2 2 2 2 . . 
 . . . d f d d e e e . . 
@@ -265,58 +214,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block></value></block></statement><value name="IF3"><block type="logic_operation" id="E5{CDQ*j%v)q?r47`YLu"><field name="OP">AND</field><value name="A"><block type="spritehasobstacle" id="$_3.[kWwfUa^hx[w|.(y"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="yXON;cV].T0@sW[ey$?["><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><block type="logic_compare" id="s@RoB~5e$mza-iB%r}*Q"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="EK=*EuXSljDlrN3G8cRy"><field name="property">Sprite.vx</field><value name="mySprite"><block type="variables_get" id=",|7*7{IL]XuZq]0GeaT!"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="E^AQB.iA|7pfKf@~iH{F"><field name="NUM">0</field></shadow></value></block></value></block></value><statement name="DO3"><block type="spritesetimage" id="K*+ow|P_Yn.;$cPoyp;Y"><value name="sprite"><block type="variables_get" id="(V^]s9JZwjyyf*6;^B)+"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id=")|@B@g.yXf!rj]E+(Q26"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="variables_get" id="97yuTut[8:}R:O%n5dDO"><field name="VAR" id="lWECY0U:EX,F-Nga;2|h">marioIsFacingRightImage</field></block></value></block></statement><value name="IF4"><block type="spritehasobstacle" id="$,sX/xSmwT0r|Fb!I;~l"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="O*S~=`=_h5/{#OD!j`Pl"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><statement name="DO4"><block type="spritesetimage" id="Etg`MhroAk=#K@foNU-R"><value name="sprite"><block type="variables_get" id="A_XlqZN#);wB1WqZ`w+h"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id=";k{+/WN/ypAq#YX|P.jE"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="variables_get" id="GgwSDq`db[aai7PUtlP~"><field name="VAR" id="lWECY0U:EX,F-Nga;2|h">marioIsFacingRightImage</field></block></value></block></statement></block></statement></block><block type="keyonevent" id="0L~Hu]_I@1b6L9Y_f5U%" x="1677" y="20"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="DzZDQ!RdC{|zk29F3**;"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="3OkTJc8Exc#XkC`%B::@"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="23_Xa,dk}#=32KnLy=Rj"><field name="VAR" id="3]B:cL-AY`1(7ljt8F`7">mario jump count</field></block></value><value name="B"><shadow type="math_number" id="]-ag9/l_KKIHyrpP[~K7"><field name="NUM">2</field></shadow></value></block></value><statement name="DO0"><block type="Sprite_blockCombine_set" id="GBl}*xGJD*4kuvPJrVeV"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get" id="SI(Ke)CnVh!5oyaIPL@K"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="value"><shadow type="math_number" id="Q/1PXx#Ip?sr.683BL?E"><field name="NUM">-130</field></shadow></value><next><block type="variables_change" id="-L7{*yd?c;+-U-Sr$7xE"><field name="VAR" id="3]B:cL-AY`1(7ljt8F`7">mario jump count</field><value name="VALUE"><shadow type="math_number" id=");Kj3bjvy,X-t,E!O7jB"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></statement></block><block type="keyonevent" id="=$g#aX(wtN3ap}*mHFg:" x="20" y="801"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id=";1#|bO3Aiyd@*#cbDF:m"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="~d/~NFZ%ax)A*J%B*.v6"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="caWWEJ;PdV7#H7~=XWrH"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="ag,L0:0AjcrL}Z@a%uj:"><value name="sprite"><block type="variables_get" id="MDQhuCAFhWB9[eoJWvjm"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="screen_image_picker" id="swY$Q,}!wNR=n|Jl-B|+"><field name="img">img`
+`</field></shadow></value></block></statement><value name="IF3"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="}*id4FXlO^OnL}1`v=@k"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="UlxPymV4nCpxEWx8Wiv?"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="LO+0[:3?m/ItdoRlq%X("><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="?$MQnDabJtMSQ8-5{H*G"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="9p,L:saxHUiVT99tJq*/"><field name="property">Sprite.vx</field><value name="mySprite"><block type="variables_get" id="MNn(!7c=#B3s*}P2cJG@"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="(IphX!p(AQYqb;xxtv;N"><field name="NUM">0</field></shadow></value></block></value></block></value><statement name="DO3"><block type="spritesetimage" id="Qp|s%66fA5+~qhV*2AOT"><value name="sprite"><block type="variables_get" id="a1iC7M8MdA8^2zuHN0Lw"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"/><block type="variables_get" id="BfQ)./pw}05ip.0]T1YV"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field></block></value></block></statement><value name="IF4"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="NR^O`DKvKp*8a8yZ`wIs"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="DiR#zpqXY7K!Zk7xweXw"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><statement name="DO4"><block type="spritesetimage" id="=d%nm{`LIVA$hMf9*PJ-"><value name="sprite"><block type="variables_get" id="y-D*(uqK]%O$Ilih2=RL"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"/><block type="variables_get" id="irT~86(xsvc8=ZR||!m_"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field></block></value></block></statement></block></statement></block><block type="keyonevent" id="BI+zM#Li,=z!c8rLqORB" x="2399" y="20"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="x8?O7on3jM[k-~:r~HMB"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="xvHsW)PpTvS_{dz[6KMa"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="/yZ2H?tU(P!aoOS@WP+R"><field name="VAR" id="~N3N33m3UWImMiYR1H}L">mario_jump_count</field></block></value><value name="B"><shadow type="math_number" id="zes;KWChwp!w]V_U:U6{"><field name="NUM">2</field></shadow></value></block></value><statement name="DO0"><block type="Sprite_blockCombine_set" id="NrpQ?:02V|z)vuj*SX%Z"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get" id="ipi)Unhw1ehQPGc6Roqa"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="value"><shadow type="math_number" id="nzwrvVb[E#@8QV.~|]uF"><field name="NUM">-130</field></shadow></value><next><block type="variables_change" id="P$0#1?J5z[!kL~aI%2n2"><field name="VAR" id="~N3N33m3UWImMiYR1H}L">mario_jump_count</field><value name="VALUE"><shadow type="math_number" id="/VG~dcAr:[a*w(9P:m?#"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></statement></block><block type="keyonevent" id="Dw7_d}tpYsXd1t8ThTnt" x="20" y="781"><field name="button">controller.left</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id=",b7Z5i!J#w~=*VsHMn%8"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="[hv^w!Qa[8|nP5$A3),a"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="vnn%cS|{9dI24@o{Ehq#"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="X=9f90OF^J-e4(k]$~.X"><value name="sprite"><block type="variables_get" id="`U~.ZKic8qz[]h_buBVK"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="{`Q3rwTU}p7_njl?VL!!"><field name="img">img`
 . . . . 2 2 2 2 2 . . . 
 . 2 2 2 2 2 2 2 2 2 . . 
 . . . d f d d e e e . . 
@@ -333,7 +231,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block></value><next><block type="variables_set" id="81:~}(g*0(8+:[^^@w|^"><field name="VAR" id="lWECY0U:EX,F-Nga;2|h">marioIsFacingRightImage</field><value name="VALUE"><shadow type="math_number" id="4Ueo-)oCGXMIg`QGAa5C"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="eOmG+x$RfNo5B19oNpCr"><field name="img">img`
+`</field></shadow></value><next><block type="variables_set" id=",Y[X|GeeNzDzu;#0[6pR"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="]m3l!roc7V6!|{kIp$@C"><field name="img">img`
 . . . . 2 2 2 2 2 . . . 
 . 2 2 2 2 2 2 2 2 2 . . 
 . . . d f d d e e e . . 
@@ -350,7 +248,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block></value></block></next></block></statement></block></statement></block><block type="gameupdate" id="V3i+IT!eVfmq]^A!Wcof" x="544" y="801"><statement name="HANDLER"><block type="controls_if" id="dm$79-YK@[8177HhqkzX"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="0Z.b|S[N1aeMK.tN/0(1"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="4ih5bhH){xJ^Bz=If8`4"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><statement name="DO0"><block type="variables_set" id="*F_D-AgzJr[n)P[~gN`:"><field name="VAR" id="3]B:cL-AY`1(7ljt8F`7">mario jump count</field><value name="VALUE"><shadow type="math_number" id="BpMqI2wZF;.[x#i#W{`+"><field name="NUM">0</field></shadow></value></block></statement></block></statement></block><block type="screen_image_picker" id="d9(?[R|YgOuEQ__l+@h*" disabled="true" x="1068" y="801"><field name="img">img`
+`</field></block></value></block></next></block></statement></block></statement></block><block type="gameupdate" id="}AdV^Hj5i[w#clgg?VQQ" x="544" y="781"><statement name="HANDLER"><block type="controls_if" id="|;V[J#e$YOxeA^~U=FZZ"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="U2M^5}6|#u$xOM|zj5Q}"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="p3=K0,G0V6H-GLbt:*jO"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><statement name="DO0"><block type="variables_set" id="zn#C32,JM4k)6$2x=*[o"><field name="VAR" id="~N3N33m3UWImMiYR1H}L">mario_jump_count</field><value name="VALUE"><shadow type="math_number" id="p1T_?/WI9gXO.dzht:!x"><field name="NUM">0</field></shadow></value></block></statement></block></statement></block><block type="screen_image_picker" id="CG]sc^8y``N@XMEoA72m" disabled="true" x="1068" y="781"><field name="img">img`
 . . . . 2 2 2 2 2 . . . 
 . 2 2 2 2 2 2 2 2 2 . . 
 . . . d f d d e e e . . 
@@ -367,24 +265,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block><block type="keyonevent" id="%+ISR/QnOHxU,Z-fD}5]" x="1187" y="801"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="N*iGYX8MH%X-M/{Eu$?L"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="Ct/2bRLt7?W7A4P~`57h"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="ZK^?iShnB#DlCX@oxdzh"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="^izjeQ,2BtL.gFxDC}O2"><value name="sprite"><block type="variables_get" id=":Rt8XI2.#F$6cl=v_mki"><field name="VAR" id="X2[xd$H^3!VL,#Ylr,5+">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="BeNRgG.Kv$qKDjW)7CJr"><field name="img">img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`</field></shadow><block type="screen_image_picker" id="N]OPbdP^OhzXuPinUxi#"><field name="img">img`
+`</field></block><block type="screen_image_picker" id="u]tMsYL=C+AN{,e%CunV" disabled="true" x="1187" y="781"><field name="img">img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
 . . e e e d d f d . . . 
@@ -401,7 +282,58 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block></value><next><block type="variables_set" id="84#3yZT9V?e,7T;KG07e"><field name="VAR" id="lWECY0U:EX,F-Nga;2|h">marioIsFacingRightImage</field><value name="VALUE"><shadow type="math_number" id="`CGnhu1/}.j-mN8;E1x("><field name="NUM">0</field></shadow><block type="screen_image_picker" id="(xv98|vW0/h7nuC#Pr#]"><field name="img">img`
+`</field></block><block type="screen_image_picker" id="LH8mh53Xgz6zg@D}a?UK" disabled="true" x="1306" y="781"><field name="img">img`
+. . . . 2 2 2 2 2 . . . 
+. 2 2 2 2 2 2 2 2 2 . . 
+. . . d f d d e e e . . 
+. d d d f d d d e d e . 
+d d d f d d d e e d e . 
+. f f f f d d d d e . . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`</field></block><block type="gameupdate" id="F`Ke[Nc[e=zu|qo+lIl[" x="1425" y="781"><statement name="HANDLER"><block type="controls_if" id="f|w#3Zm}yw090#R}jJ@L"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="Ufi:|sY52=0rhRe*q+}w"><field name="button">controller.left</field></block></value><statement name="DO0"><block type="spritesetimage" id="_sN#:^?29*/3^IS-H]3h"><value name="sprite"><block type="variables_get" id="2y-PC92D;(hNi%e`dhk["><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="[As:gL?nUV:#B*#{8z=`"><field name="img">img`
+. . . . 2 2 2 2 2 . . . 
+. 2 2 2 2 2 2 2 2 2 . . 
+. . . d f d d e e e . . 
+. d d d f d d d e d e . 
+d d d f d d d e e d e . 
+. f f f f d d d d e . . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`</field></shadow></value><next><block type="variables_set" id="R.~)*]USjUIyY![V#!F7"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="^gW[hpX*tbNxZklA9[u:"><field name="img">img`
+. . . . 2 2 2 2 2 . . . 
+. 2 2 2 2 2 2 2 2 2 . . 
+. . . d f d d e e e . . 
+. d d d f d d d e d e . 
+d d d f d d d e e d e . 
+. f f f f d d d d e . . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`</field></block></value></block></next></block></statement><next><block type="controls_if" id=".$u?S$FxiEO;kz#K3L9;"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="kG*HB0-Dy/5_kXI+JH_U"><field name="button">controller.right</field></block></value><statement name="DO0"><block type="spritesetimage" id="iREfUTHkEIQH37YU([cm"><value name="sprite"><block type="variables_get" id="#Bl:)7A/T=OpYvLQ`wh^"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="vy`;Iil1(ojD9VI4ntaH"><field name="img">img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
 . . e e e d d f d . . . 
@@ -418,7 +350,7 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block></value></block></next></block></statement></block></statement></block><block type="screen_image_picker" id="Xbz~lx;Qi{X|pAaeo|xy" disabled="true" x="1711" y="801"><field name="img">img`
+`</field></shadow></value><next><block type="variables_set" id="U.*2+c/ktD`ngi7|0pD/"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="]+@2W[~fGIneEDTjH9JP"><field name="img">img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
 . . e e e d d f d . . . 
@@ -435,7 +367,22 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block><block type="screen_image_picker" id="OJ+h(wO%lAb:3dMCt_LH" disabled="true" x="1830" y="801"><field name="img">img`
+`</field></block></value></block></next></block></statement><next><block type="controls_if" id="2Su#YchYUiKk.?p@NoXg"><mutation elseif="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="SL6tm8^YMN-[ZeEoCrs,"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="0!c?~51uq6;^:^f/*BKd"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="on4#50busEx}#ZGoSe|5"><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="=6~1~yz/FjA-R^l%ipq*"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="-ut9^Y@=j-X/MK_mS-^r"><field name="NUM">0</field></shadow></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="?vi6JQ7]C]jwy%aWH/6:"><field name="button">controller.left</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="nNM!,^OTmOK//d(oH~D]"><value name="sprite"><block type="variables_get" id="/QV[w4rEGx9hPfeD,=~h"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker"/><block type="variables_get" id="4SK~V%BeRiTc+;YVIlX["><field name="VAR" id="C=@MG4j?`{X]=Q+{*+!F">marioJumpLeftImage</field></block></value></block></statement><value name="IF1"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="fX?aM6tCdKEzj0dQ@U_?"><field name="OP">AND</field><value name="A"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="~KXnVnAdbCPUhB7xlS3X"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="Sprite_blockCombine_get" id="_IbH;9N@4OEP?#8r3^_S"><field name="property">Sprite.vy</field><value name="mySprite"><block type="variables_get" id="bUAUU]ZyJQIC2@!;Qww^"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><value name="B"><shadow type="math_number" id="3AA?RWcRK`yZ:+J^%SS@"><field name="NUM">0</field></shadow></value></block></value><value name="B"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="keyispressed" id="GPnY+yhcTx!,tP-%l5eq"><field name="button">controller.right</field></block></value></block></value><statement name="DO1"><block type="spritesetimage" id="c[XFl$(CTO.[Dzu2K1ZV"><value name="sprite"><block type="variables_get" id="2_e@71-bW2eGYC#VIQCV"><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id=".xXTn0#,jzo7d#yY`U%g"><field name="img">img`
+. . . . 2 2 2 2 2 . . d d d . . 
+. . . 2 2 2 2 2 2 2 2 2 d d . . 
+. . . e e e d d f d . 2 2 2 . . 
+. . e d e d d d f d d d 2 2 . . 
+. . e d e e d d d f d d d 2 . . 
+. . . e d d d d f f f f 2 . . . 
+. . . . d d d d d d d 2 2 . . . 
+d d 2 2 2 2 8 2 2 2 8 2 . . . e 
+d d 2 2 2 2 2 8 2 2 2 8 . . e e 
+. d d 2 2 2 2 8 8 8 8 5 8 8 e e 
+. . . . 8 8 8 8 5 8 8 8 8 8 e e 
+. . e e 8 8 8 8 8 8 8 8 8 8 e e 
+. e e e 8 8 8 8 8 8 . . . . . . 
+. e e . . . . . . . . . . . . . 
+`</field></shadow></value></block></statement></block></next></block></next></block></statement></block><block type="keyonevent" id="#f%geVt?z,MRLJb=T%%^" x="2446" y="781"><field name="button">controller.right</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="controls_if" id="n%HBgZ[4c/Bw=-##%RlM"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="spritehasobstacle" id="_=naifmr-.J=mHF|Ug{3"><field name="direction">CollisionDirection.Bottom</field><value name="sprite"><block type="variables_get" id="$~fe)dKaKgtTtSn+0te["><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value></block></value><statement name="DO0"><block type="spritesetimage" id="V,Dlzzv~0[UaKNUdbige"><value name="sprite"><block type="variables_get" id="C|N48?8Y^C_EXv)3On9["><field name="VAR" id="}L#,990ey.^YTQU8vhfM">Mario</field></block></value><value name="img"><shadow type="screen_image_picker" id="%Pvh4Hu|:fCFr8_/9[!l"><field name="img">img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
 . . e e e d d f d . . . 
@@ -452,4 +399,38 @@ d d 8 8 8 8 8 8 8 8 d d
 . . 8 8 8 . . 8 8 8 . . 
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
-`</field></block><block type="logic_boolean" id="!J8t[y=*p-Y+7PdoNk1t" disabled="true" x="1750" y="950"><field name="BOOL">TRUE</field></block></xml>
+`</field></shadow></value><next><block type="variables_set" id="#oBVovsX/3%8OL6;{V*W"><field name="VAR" id="g,F#q@kA6oHhy(;dTLnk">marioDefualtFixImage</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="screen_image_picker" id="pfJ=?3Snyh23pp${~qVX"><field name="img">img`
+. . . 2 2 2 2 2 . . . . 
+. . 2 2 2 2 2 2 2 2 2 . 
+. . e e e d d f d . . . 
+. e d e d d d f d d d . 
+. e d e e d d d f d d d 
+. . e d d d d f f f f . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`</field></block></value></block></next></block></statement></block></statement></block><block type="screen_image_picker" id="ZP7;%/x#=Z!exNqPQ4/e" disabled="true" x="20" y="1580"><field name="img">img`
+. . . 2 2 2 2 2 . . . . 
+. . 2 2 2 2 2 2 2 2 2 . 
+. . e e e d d f d . . . 
+. e d e d d d f d d d . 
+. e d e e d d d f d d d 
+. . e d d d d f f f f . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`</field></block></xml>
