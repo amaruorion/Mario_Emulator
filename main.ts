@@ -270,7 +270,9 @@ marioJumpLeftImage.flipX()
 Mario.ay = 350
 Goomba.ay = 350
 game.onUpdate(function () {
-    if (Mario.vy < 0 && false) {
+    if (Mario.vy < 0 && controller.left.isPressed()) {
+        Mario.setImage(marioJumpLeftImage)
+    } else if (Mario.vy < 0 && controller.right.isPressed()) {
         Mario.setImage(img`
 . . . . 2 2 2 2 2 . . d d d . . 
 . . . 2 2 2 2 2 2 2 2 2 d d . . 
@@ -287,9 +289,7 @@ d d 2 2 2 2 2 8 2 2 2 8 . . e e
 . e e e 8 8 8 8 8 8 . . . . . . 
 . e e . . . . . . . . . . . . . 
 `)
-    } else if (false) {
-    	
-    } else if (marioImageFacingRight == false) {
+    } else if (Mario.isHittingTile(CollisionDirection.Bottom) && Mario.vx < 0) {
         Mario.setImage(img`
 . . . . 2 2 2 2 2 . . . 
 . 2 2 2 2 2 2 2 2 2 . . 
@@ -308,7 +308,26 @@ d d 8 8 8 8 8 8 8 8 d d
 . e e e . . . . e e e . 
 e e e e . . . . e e e e 
 `)
-    } else if (marioImageFacingRight == true) {
+    } else if (Mario.isHittingTile(CollisionDirection.Bottom) && Mario.vx > 0) {
+        Mario.setImage(img`
+. . . 2 2 2 2 2 . . . . 
+. . 2 2 2 2 2 2 2 2 2 . 
+. . e e e d d f d . . . 
+. e d e d d d f d d d . 
+. e d e e d d d f d d d 
+. . e d d d d f f f f . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`)
+    } else if (Mario.isHittingTile(CollisionDirection.Bottom)) {
         Mario.setImage(img`
 . . . 2 2 2 2 2 . . . . 
 . . 2 2 2 2 2 2 2 2 2 . 
