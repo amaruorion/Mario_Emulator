@@ -23,6 +23,64 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `
 }
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (Mario.isHittingTile(CollisionDirection.Bottom)) {
+        Mario.setImage(img`
+. . . . 2 2 2 2 2 . . . 
+. 2 2 2 2 2 2 2 2 2 . . 
+. . . d f d d e e e . . 
+. d d d f d d d e d e . 
+d d d f d d d e e d e . 
+. f f f f d d d d e . . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`)
+        marioDefualtFixImage = img`
+. . . . 2 2 2 2 2 . . . 
+. 2 2 2 2 2 2 2 2 2 . . 
+. . . d f d d e e e . . 
+. d d d f d d d e d e . 
+d d d f d d d e e d e . 
+. f f f f d d d d e . . 
+. . . d d d d d d . . . 
+. . 2 2 8 2 2 8 2 2 . . 
+. 2 2 2 8 2 2 8 2 2 2 . 
+2 2 2 2 8 8 8 8 2 2 2 2 
+d d 2 8 5 8 8 5 8 2 d d 
+d d d 8 8 8 8 8 8 d d d 
+d d 8 8 8 8 8 8 8 8 d d 
+. . 8 8 8 . . 8 8 8 . . 
+. e e e . . . . e e e . 
+e e e e . . . . e e e e 
+`
+    }
+})
+sprites.onOverlap(SpriteKind.Mario, SpriteKind.Goomba, function (sprite, otherSprite) {
+    if (Mario.y < Goomba.y) {
+        Goomba.setImage(img`
+. . . . . e e e e e e e e . . . . . 
+. . . e e e e e e e e e e e e . . . 
+. e e f f f e e e e e e f f f e e . 
+e e d d d d f f f f f f d d d d e e 
+e e e e e e e e e e e e e e e e e e 
+. . . d d d d d d d d d d d . . . . 
+. . . . d d d d d d d d d . . . . . 
+. . f f f f . . . . . . f f f f . . 
+`)
+        Goomba.setPosition(Goomba.x, 105)
+        pause(1000)
+        info.changeScoreBy(100)
+        otherSprite.destroy()
+    }
+})
 function startGame () {
     tiles.setTilemap(tiles.createTilemap(
             hex`0a0008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`,
@@ -220,46 +278,6 @@ d d 2 2 2 2 2 8 2 2 2 8 . . e e
     Mario.ay = 350
     Goomba.ay = 350
 }
-controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (Mario.isHittingTile(CollisionDirection.Bottom)) {
-        Mario.setImage(img`
-. . . . 2 2 2 2 2 . . . 
-. 2 2 2 2 2 2 2 2 2 . . 
-. . . d f d d e e e . . 
-. d d d f d d d e d e . 
-d d d f d d d e e d e . 
-. f f f f d d d d e . . 
-. . . d d d d d d . . . 
-. . 2 2 8 2 2 8 2 2 . . 
-. 2 2 2 8 2 2 8 2 2 2 . 
-2 2 2 2 8 8 8 8 2 2 2 2 
-d d 2 8 5 8 8 5 8 2 d d 
-d d d 8 8 8 8 8 8 d d d 
-d d 8 8 8 8 8 8 8 8 d d 
-. . 8 8 8 . . 8 8 8 . . 
-. e e e . . . . e e e . 
-e e e e . . . . e e e e 
-`)
-        marioDefualtFixImage = img`
-. . . . 2 2 2 2 2 . . . 
-. 2 2 2 2 2 2 2 2 2 . . 
-. . . d f d d e e e . . 
-. d d d f d d d e d e . 
-d d d f d d d e e d e . 
-. f f f f d d d d e . . 
-. . . d d d d d d . . . 
-. . 2 2 8 2 2 8 2 2 . . 
-. 2 2 2 8 2 2 8 2 2 2 . 
-2 2 2 2 8 8 8 8 2 2 2 2 
-d d 2 8 5 8 8 5 8 2 d d 
-d d d 8 8 8 8 8 8 d d d 
-d d 8 8 8 8 8 8 8 8 d d 
-. . 8 8 8 . . 8 8 8 . . 
-. e e e . . . . e e e . 
-e e e e . . . . e e e e 
-`
-    }
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mario_jump_count <= 2) {
         Mario.vy = -130
@@ -306,12 +324,12 @@ e e e e . . . . e e e e
 `
     }
 })
-let marioDefualtFixImage: Image = null
 let marioJumpLeftImage: Image = null
 let marioProjectileVelocity = 0
-let Goomba: Sprite = null
-let Mario: Sprite = null
 let mario_jump_count = 0
+let Goomba: Sprite = null
+let marioDefualtFixImage: Image = null
+let Mario: Sprite = null
 startGame()
 game.onUpdate(function () {
     if (Mario.vy < 0 && controller.left.isPressed()) {
